@@ -1,0 +1,2587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Twilio::REST::Api::V2010::AccountContext
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../../../';
+  framesUrl = "../../../../frames.html#!Twilio/REST/Api/V2010/AccountContext.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../../../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../../Twilio.html" title="Twilio (module)">Twilio</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../../REST.html" title="Twilio::REST (module)">REST</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../Api.html" title="Twilio::REST::Api (class)">Api</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../V2010.html" title="Twilio::REST::Api::V2010 (class)">V2010</a></span></span>
+     &raquo; 
+    <span class="title">AccountContext</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Twilio::REST::Api::V2010::AccountContext
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="../../InstanceContext.html" title="Twilio::REST::InstanceContext (class)">InstanceContext</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../../InstanceContext.html" title="Twilio::REST::InstanceContext (class)">InstanceContext</a></span></li>
+          
+            <li class="next">Twilio::REST::Api::V2010::AccountContext</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/twilio-ruby/rest/api/v2010/account.rb<span class="defines">,<br />
+  lib/twilio-ruby/rest/api/v2010/account/sms.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/call.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/queue.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/token.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sandbox.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/message.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/address.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/recording.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/conference.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/domain.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/connect_app.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/application.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/queue/member.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/notification.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/trigger.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/message/media.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/call/feedback.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/transcription.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sms/short_code.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/call/recording.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sms/sms_message.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/call/notification.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/today.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/daily.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/outgoing_caller_id.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/validation_request.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/credential_list.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/yearly.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/monthly.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/call/feedback_summary.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/all_time.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/yesterday.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/authorized_connect_app.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/available_phone_number.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/conference/participant.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/last_month.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/usage/record/this_month.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/recording/transcription.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/ip_access_control_list.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number/local.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number/mobile.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/available_phone_number/local.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/available_phone_number/mobile.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/address/dependent_phone_number.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/credential_list/credential.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/incoming_phone_number/toll_free.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/available_phone_number/toll_free.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/domain/credential_list_mapping.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/ip_access_control_list/ip_address.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/domain/ip_access_control_list_mapping.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="AccountContext/AddressContext.html" title="Twilio::REST::Api::V2010::AccountContext::AddressContext (class)">AddressContext</a></span>, <span class='object_link'><a href="AccountContext/AddressInstance.html" title="Twilio::REST::Api::V2010::AccountContext::AddressInstance (class)">AddressInstance</a></span>, <span class='object_link'><a href="AccountContext/AddressList.html" title="Twilio::REST::Api::V2010::AccountContext::AddressList (class)">AddressList</a></span>, <span class='object_link'><a href="AccountContext/AddressPage.html" title="Twilio::REST::Api::V2010::AccountContext::AddressPage (class)">AddressPage</a></span>, <span class='object_link'><a href="AccountContext/ApplicationContext.html" title="Twilio::REST::Api::V2010::AccountContext::ApplicationContext (class)">ApplicationContext</a></span>, <span class='object_link'><a href="AccountContext/ApplicationInstance.html" title="Twilio::REST::Api::V2010::AccountContext::ApplicationInstance (class)">ApplicationInstance</a></span>, <span class='object_link'><a href="AccountContext/ApplicationList.html" title="Twilio::REST::Api::V2010::AccountContext::ApplicationList (class)">ApplicationList</a></span>, <span class='object_link'><a href="AccountContext/ApplicationPage.html" title="Twilio::REST::Api::V2010::AccountContext::ApplicationPage (class)">ApplicationPage</a></span>, <span class='object_link'><a href="AccountContext/AuthorizedConnectAppContext.html" title="Twilio::REST::Api::V2010::AccountContext::AuthorizedConnectAppContext (class)">AuthorizedConnectAppContext</a></span>, <span class='object_link'><a href="AccountContext/AuthorizedConnectAppInstance.html" title="Twilio::REST::Api::V2010::AccountContext::AuthorizedConnectAppInstance (class)">AuthorizedConnectAppInstance</a></span>, <span class='object_link'><a href="AccountContext/AuthorizedConnectAppList.html" title="Twilio::REST::Api::V2010::AccountContext::AuthorizedConnectAppList (class)">AuthorizedConnectAppList</a></span>, <span class='object_link'><a href="AccountContext/AuthorizedConnectAppPage.html" title="Twilio::REST::Api::V2010::AccountContext::AuthorizedConnectAppPage (class)">AuthorizedConnectAppPage</a></span>, <span class='object_link'><a href="AccountContext/AvailablePhoneNumberCountryContext.html" title="Twilio::REST::Api::V2010::AccountContext::AvailablePhoneNumberCountryContext (class)">AvailablePhoneNumberCountryContext</a></span>, <span class='object_link'><a href="AccountContext/AvailablePhoneNumberCountryInstance.html" title="Twilio::REST::Api::V2010::AccountContext::AvailablePhoneNumberCountryInstance (class)">AvailablePhoneNumberCountryInstance</a></span>, <span class='object_link'><a href="AccountContext/AvailablePhoneNumberCountryList.html" title="Twilio::REST::Api::V2010::AccountContext::AvailablePhoneNumberCountryList (class)">AvailablePhoneNumberCountryList</a></span>, <span class='object_link'><a href="AccountContext/AvailablePhoneNumberCountryPage.html" title="Twilio::REST::Api::V2010::AccountContext::AvailablePhoneNumberCountryPage (class)">AvailablePhoneNumberCountryPage</a></span>, <span class='object_link'><a href="AccountContext/CallContext.html" title="Twilio::REST::Api::V2010::AccountContext::CallContext (class)">CallContext</a></span>, <span class='object_link'><a href="AccountContext/CallInstance.html" title="Twilio::REST::Api::V2010::AccountContext::CallInstance (class)">CallInstance</a></span>, <span class='object_link'><a href="AccountContext/CallList.html" title="Twilio::REST::Api::V2010::AccountContext::CallList (class)">CallList</a></span>, <span class='object_link'><a href="AccountContext/CallPage.html" title="Twilio::REST::Api::V2010::AccountContext::CallPage (class)">CallPage</a></span>, <span class='object_link'><a href="AccountContext/ConferenceContext.html" title="Twilio::REST::Api::V2010::AccountContext::ConferenceContext (class)">ConferenceContext</a></span>, <span class='object_link'><a href="AccountContext/ConferenceInstance.html" title="Twilio::REST::Api::V2010::AccountContext::ConferenceInstance (class)">ConferenceInstance</a></span>, <span class='object_link'><a href="AccountContext/ConferenceList.html" title="Twilio::REST::Api::V2010::AccountContext::ConferenceList (class)">ConferenceList</a></span>, <span class='object_link'><a href="AccountContext/ConferencePage.html" title="Twilio::REST::Api::V2010::AccountContext::ConferencePage (class)">ConferencePage</a></span>, <span class='object_link'><a href="AccountContext/ConnectAppContext.html" title="Twilio::REST::Api::V2010::AccountContext::ConnectAppContext (class)">ConnectAppContext</a></span>, <span class='object_link'><a href="AccountContext/ConnectAppInstance.html" title="Twilio::REST::Api::V2010::AccountContext::ConnectAppInstance (class)">ConnectAppInstance</a></span>, <span class='object_link'><a href="AccountContext/ConnectAppList.html" title="Twilio::REST::Api::V2010::AccountContext::ConnectAppList (class)">ConnectAppList</a></span>, <span class='object_link'><a href="AccountContext/ConnectAppPage.html" title="Twilio::REST::Api::V2010::AccountContext::ConnectAppPage (class)">ConnectAppPage</a></span>, <span class='object_link'><a href="AccountContext/IncomingPhoneNumberContext.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberContext (class)">IncomingPhoneNumberContext</a></span>, <span class='object_link'><a href="AccountContext/IncomingPhoneNumberInstance.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberInstance (class)">IncomingPhoneNumberInstance</a></span>, <span class='object_link'><a href="AccountContext/IncomingPhoneNumberList.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberList (class)">IncomingPhoneNumberList</a></span>, <span class='object_link'><a href="AccountContext/IncomingPhoneNumberPage.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberPage (class)">IncomingPhoneNumberPage</a></span>, <span class='object_link'><a href="AccountContext/MessageContext.html" title="Twilio::REST::Api::V2010::AccountContext::MessageContext (class)">MessageContext</a></span>, <span class='object_link'><a href="AccountContext/MessageInstance.html" title="Twilio::REST::Api::V2010::AccountContext::MessageInstance (class)">MessageInstance</a></span>, <span class='object_link'><a href="AccountContext/MessageList.html" title="Twilio::REST::Api::V2010::AccountContext::MessageList (class)">MessageList</a></span>, <span class='object_link'><a href="AccountContext/MessagePage.html" title="Twilio::REST::Api::V2010::AccountContext::MessagePage (class)">MessagePage</a></span>, <span class='object_link'><a href="AccountContext/NotificationContext.html" title="Twilio::REST::Api::V2010::AccountContext::NotificationContext (class)">NotificationContext</a></span>, <span class='object_link'><a href="AccountContext/NotificationInstance.html" title="Twilio::REST::Api::V2010::AccountContext::NotificationInstance (class)">NotificationInstance</a></span>, <span class='object_link'><a href="AccountContext/NotificationList.html" title="Twilio::REST::Api::V2010::AccountContext::NotificationList (class)">NotificationList</a></span>, <span class='object_link'><a href="AccountContext/NotificationPage.html" title="Twilio::REST::Api::V2010::AccountContext::NotificationPage (class)">NotificationPage</a></span>, <span class='object_link'><a href="AccountContext/OutgoingCallerIdContext.html" title="Twilio::REST::Api::V2010::AccountContext::OutgoingCallerIdContext (class)">OutgoingCallerIdContext</a></span>, <span class='object_link'><a href="AccountContext/OutgoingCallerIdInstance.html" title="Twilio::REST::Api::V2010::AccountContext::OutgoingCallerIdInstance (class)">OutgoingCallerIdInstance</a></span>, <span class='object_link'><a href="AccountContext/OutgoingCallerIdList.html" title="Twilio::REST::Api::V2010::AccountContext::OutgoingCallerIdList (class)">OutgoingCallerIdList</a></span>, <span class='object_link'><a href="AccountContext/OutgoingCallerIdPage.html" title="Twilio::REST::Api::V2010::AccountContext::OutgoingCallerIdPage (class)">OutgoingCallerIdPage</a></span>, <span class='object_link'><a href="AccountContext/QueueContext.html" title="Twilio::REST::Api::V2010::AccountContext::QueueContext (class)">QueueContext</a></span>, <span class='object_link'><a href="AccountContext/QueueInstance.html" title="Twilio::REST::Api::V2010::AccountContext::QueueInstance (class)">QueueInstance</a></span>, <span class='object_link'><a href="AccountContext/QueueList.html" title="Twilio::REST::Api::V2010::AccountContext::QueueList (class)">QueueList</a></span>, <span class='object_link'><a href="AccountContext/QueuePage.html" title="Twilio::REST::Api::V2010::AccountContext::QueuePage (class)">QueuePage</a></span>, <span class='object_link'><a href="AccountContext/RecordingContext.html" title="Twilio::REST::Api::V2010::AccountContext::RecordingContext (class)">RecordingContext</a></span>, <span class='object_link'><a href="AccountContext/RecordingInstance.html" title="Twilio::REST::Api::V2010::AccountContext::RecordingInstance (class)">RecordingInstance</a></span>, <span class='object_link'><a href="AccountContext/RecordingList.html" title="Twilio::REST::Api::V2010::AccountContext::RecordingList (class)">RecordingList</a></span>, <span class='object_link'><a href="AccountContext/RecordingPage.html" title="Twilio::REST::Api::V2010::AccountContext::RecordingPage (class)">RecordingPage</a></span>, <span class='object_link'><a href="AccountContext/SandboxContext.html" title="Twilio::REST::Api::V2010::AccountContext::SandboxContext (class)">SandboxContext</a></span>, <span class='object_link'><a href="AccountContext/SandboxInstance.html" title="Twilio::REST::Api::V2010::AccountContext::SandboxInstance (class)">SandboxInstance</a></span>, <span class='object_link'><a href="AccountContext/SandboxList.html" title="Twilio::REST::Api::V2010::AccountContext::SandboxList (class)">SandboxList</a></span>, <span class='object_link'><a href="AccountContext/SandboxPage.html" title="Twilio::REST::Api::V2010::AccountContext::SandboxPage (class)">SandboxPage</a></span>, <span class='object_link'><a href="AccountContext/SipInstance.html" title="Twilio::REST::Api::V2010::AccountContext::SipInstance (class)">SipInstance</a></span>, <span class='object_link'><a href="AccountContext/SipList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList (class)">SipList</a></span>, <span class='object_link'><a href="AccountContext/SipPage.html" title="Twilio::REST::Api::V2010::AccountContext::SipPage (class)">SipPage</a></span>, <span class='object_link'><a href="AccountContext/SmsInstance.html" title="Twilio::REST::Api::V2010::AccountContext::SmsInstance (class)">SmsInstance</a></span>, <span class='object_link'><a href="AccountContext/SmsList.html" title="Twilio::REST::Api::V2010::AccountContext::SmsList (class)">SmsList</a></span>, <span class='object_link'><a href="AccountContext/SmsPage.html" title="Twilio::REST::Api::V2010::AccountContext::SmsPage (class)">SmsPage</a></span>, <span class='object_link'><a href="AccountContext/TokenInstance.html" title="Twilio::REST::Api::V2010::AccountContext::TokenInstance (class)">TokenInstance</a></span>, <span class='object_link'><a href="AccountContext/TokenList.html" title="Twilio::REST::Api::V2010::AccountContext::TokenList (class)">TokenList</a></span>, <span class='object_link'><a href="AccountContext/TokenPage.html" title="Twilio::REST::Api::V2010::AccountContext::TokenPage (class)">TokenPage</a></span>, <span class='object_link'><a href="AccountContext/TranscriptionContext.html" title="Twilio::REST::Api::V2010::AccountContext::TranscriptionContext (class)">TranscriptionContext</a></span>, <span class='object_link'><a href="AccountContext/TranscriptionInstance.html" title="Twilio::REST::Api::V2010::AccountContext::TranscriptionInstance (class)">TranscriptionInstance</a></span>, <span class='object_link'><a href="AccountContext/TranscriptionList.html" title="Twilio::REST::Api::V2010::AccountContext::TranscriptionList (class)">TranscriptionList</a></span>, <span class='object_link'><a href="AccountContext/TranscriptionPage.html" title="Twilio::REST::Api::V2010::AccountContext::TranscriptionPage (class)">TranscriptionPage</a></span>, <span class='object_link'><a href="AccountContext/UsageInstance.html" title="Twilio::REST::Api::V2010::AccountContext::UsageInstance (class)">UsageInstance</a></span>, <span class='object_link'><a href="AccountContext/UsageList.html" title="Twilio::REST::Api::V2010::AccountContext::UsageList (class)">UsageList</a></span>, <span class='object_link'><a href="AccountContext/UsagePage.html" title="Twilio::REST::Api::V2010::AccountContext::UsagePage (class)">UsagePage</a></span>, <span class='object_link'><a href="AccountContext/ValidationRequestInstance.html" title="Twilio::REST::Api::V2010::AccountContext::ValidationRequestInstance (class)">ValidationRequestInstance</a></span>, <span class='object_link'><a href="AccountContext/ValidationRequestList.html" title="Twilio::REST::Api::V2010::AccountContext::ValidationRequestList (class)">ValidationRequestList</a></span>, <span class='object_link'><a href="AccountContext/ValidationRequestPage.html" title="Twilio::REST::Api::V2010::AccountContext::ValidationRequestPage (class)">ValidationRequestPage</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#addresses-instance_method" title="#addresses (instance method)">- (AddressList) <strong>addresses</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the addresses.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#applications-instance_method" title="#applications (instance method)">- (ApplicationList) <strong>applications</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the applications.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#authorized_connect_apps-instance_method" title="#authorized_connect_apps (instance method)">- (AuthorizedConnectAppList) <strong>authorized_connect_apps</strong>(connect_app_sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the authorized_connect_apps.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#available_phone_numbers-instance_method" title="#available_phone_numbers (instance method)">- (AvailablePhoneNumberCountryList) <strong>available_phone_numbers</strong>(country_code = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the available_phone_numbers.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calls-instance_method" title="#calls (instance method)">- (CallList) <strong>calls</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the calls.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#conferences-instance_method" title="#conferences (instance method)">- (ConferenceList) <strong>conferences</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the conferences.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#connect_apps-instance_method" title="#connect_apps (instance method)">- (ConnectAppList) <strong>connect_apps</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the connect_apps.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fetch-instance_method" title="#fetch (instance method)">- (AccountInstance) <strong>fetch</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Fetch a AccountInstance.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#incoming_phone_numbers-instance_method" title="#incoming_phone_numbers (instance method)">- (IncomingPhoneNumberList) <strong>incoming_phone_numbers</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the incoming_phone_numbers.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (AccountContext) <strong>initialize</strong>(version, sid) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>AccountContext.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#messages-instance_method" title="#messages (instance method)">- (MessageList) <strong>messages</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the messages.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#notifications-instance_method" title="#notifications (instance method)">- (NotificationList) <strong>notifications</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the notifications.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#outgoing_caller_ids-instance_method" title="#outgoing_caller_ids (instance method)">- (OutgoingCallerIdList) <strong>outgoing_caller_ids</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the outgoing_caller_ids.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#queues-instance_method" title="#queues (instance method)">- (QueueList) <strong>queues</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the queues.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#recordings-instance_method" title="#recordings (instance method)">- (RecordingList) <strong>recordings</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the recordings.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sandbox-instance_method" title="#sandbox (instance method)">- (SandboxList) <strong>sandbox</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the sandbox.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sip-instance_method" title="#sip (instance method)">- (SipList) <strong>sip</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the sip.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sms-instance_method" title="#sms (instance method)">- (SmsList) <strong>sms</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the sms.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_s-instance_method" title="#to_s (instance method)">- (Object) <strong>to_s</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Provide a user friendly representation.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tokens-instance_method" title="#tokens (instance method)">- (TokenList) <strong>tokens</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the tokens.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#transcriptions-instance_method" title="#transcriptions (instance method)">- (TranscriptionList) <strong>transcriptions</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the transcriptions.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update-instance_method" title="#update (instance method)">- (AccountInstance) <strong>update</strong>(friendly_name: nil, status: nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Updated AccountInstance.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#usage-instance_method" title="#usage (instance method)">- (UsageList) <strong>usage</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the usage.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#validation_requests-instance_method" title="#validation_requests (instance method)">- (ValidationRequestList) <strong>validation_requests</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the validation_requests.</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Twilio::REST::Api::V2010::AccountContext (class)">AccountContext</a></span></tt>) <strong>initialize</strong>(version, sid) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns AccountContext
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 214</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='comma'>,</span> <span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='rparen'>)</span>
+  
+  <span class='comment'># Path Solution
+</span>  <span class='ivar'>@solution</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+      <span class='label'>sid:</span> <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+  <span class='rbrace'>}</span>
+  <span class='ivar'>@uri</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/Accounts/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>.json</span><span class='tstring_end'>&quot;</span></span>
+  
+  <span class='comment'># Dependents
+</span>  <span class='ivar'>@addresses</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@applications</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@authorized_connect_apps</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@available_phone_numbers</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@calls</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@conferences</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@connect_apps</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@incoming_phone_numbers</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@messages</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@notifications</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@outgoing_caller_ids</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@queues</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@recordings</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@sandbox</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@sip</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@sms</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@tokens</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@transcriptions</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@usage</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@validation_requests</span> <span class='op'>=</span> <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="addresses-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/AddressList.html" title="Twilio::REST::Api::V2010::AccountContext::AddressList (class)">AddressList</a></span></tt>) <strong>addresses</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the addresses
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/AddressList.html" title="Twilio::REST::Api::V2010::AccountContext::AddressList (class)">AddressList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>AddressList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 295</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_addresses'>addresses</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>AddressContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@addresses</span>
+    <span class='ivar'>@addresses</span> <span class='op'>=</span> <span class='const'>AddressList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@addresses</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="applications-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/ApplicationList.html" title="Twilio::REST::Api::V2010::AccountContext::ApplicationList (class)">ApplicationList</a></span></tt>) <strong>applications</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the applications
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/ApplicationList.html" title="Twilio::REST::Api::V2010::AccountContext::ApplicationList (class)">ApplicationList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>ApplicationList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 317</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_applications'>applications</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>ApplicationContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@applications</span>
+    <span class='ivar'>@applications</span> <span class='op'>=</span> <span class='const'>ApplicationList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@applications</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="authorized_connect_apps-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/AuthorizedConnectAppList.html" title="Twilio::REST::Api::V2010::AccountContext::AuthorizedConnectAppList (class)">AuthorizedConnectAppList</a></span></tt>) <strong>authorized_connect_apps</strong>(connect_app_sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the authorized_connect_apps
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/AuthorizedConnectAppList.html" title="Twilio::REST::Api::V2010::AccountContext::AuthorizedConnectAppList (class)">AuthorizedConnectAppList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>AuthorizedConnectAppList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 339</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_authorized_connect_apps'>authorized_connect_apps</span><span class='lparen'>(</span><span class='id identifier rubyid_connect_app_sid'>connect_app_sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_connect_app_sid'>connect_app_sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>AuthorizedConnectAppContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_connect_app_sid'>connect_app_sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@authorized_connect_apps</span>
+    <span class='ivar'>@authorized_connect_apps</span> <span class='op'>=</span> <span class='const'>AuthorizedConnectAppList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@authorized_connect_apps</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="available_phone_numbers-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/AvailablePhoneNumberCountryList.html" title="Twilio::REST::Api::V2010::AccountContext::AvailablePhoneNumberCountryList (class)">AvailablePhoneNumberCountryList</a></span></tt>) <strong>available_phone_numbers</strong>(country_code = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the available_phone_numbers
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/AvailablePhoneNumberCountryList.html" title="Twilio::REST::Api::V2010::AccountContext::AvailablePhoneNumberCountryList (class)">AvailablePhoneNumberCountryList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>AvailablePhoneNumberCountryList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 361</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_available_phone_numbers'>available_phone_numbers</span><span class='lparen'>(</span><span class='id identifier rubyid_country_code'>country_code</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_country_code'>country_code</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>AvailablePhoneNumberCountryContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_country_code'>country_code</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@available_phone_numbers</span>
+    <span class='ivar'>@available_phone_numbers</span> <span class='op'>=</span> <span class='const'>AvailablePhoneNumberCountryList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@available_phone_numbers</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="calls-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/CallList.html" title="Twilio::REST::Api::V2010::AccountContext::CallList (class)">CallList</a></span></tt>) <strong>calls</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the calls
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/CallList.html" title="Twilio::REST::Api::V2010::AccountContext::CallList (class)">CallList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>CallList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 383</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calls'>calls</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>CallContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@calls</span>
+    <span class='ivar'>@calls</span> <span class='op'>=</span> <span class='const'>CallList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@calls</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="conferences-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/ConferenceList.html" title="Twilio::REST::Api::V2010::AccountContext::ConferenceList (class)">ConferenceList</a></span></tt>) <strong>conferences</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the conferences
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/ConferenceList.html" title="Twilio::REST::Api::V2010::AccountContext::ConferenceList (class)">ConferenceList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>ConferenceList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 405</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_conferences'>conferences</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>ConferenceContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@conferences</span>
+    <span class='ivar'>@conferences</span> <span class='op'>=</span> <span class='const'>ConferenceList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@conferences</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="connect_apps-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/ConnectAppList.html" title="Twilio::REST::Api::V2010::AccountContext::ConnectAppList (class)">ConnectAppList</a></span></tt>) <strong>connect_apps</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the connect_apps
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/ConnectAppList.html" title="Twilio::REST::Api::V2010::AccountContext::ConnectAppList (class)">ConnectAppList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>ConnectAppList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 427</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_connect_apps'>connect_apps</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>ConnectAppContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@connect_apps</span>
+    <span class='ivar'>@connect_apps</span> <span class='op'>=</span> <span class='const'>ConnectAppList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@connect_apps</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="fetch-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountInstance.html" title="Twilio::REST::Api::V2010::AccountInstance (class)">AccountInstance</a></span></tt>) <strong>fetch</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Fetch a AccountInstance
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountInstance.html" title="Twilio::REST::Api::V2010::AccountInstance (class)">AccountInstance</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>Fetched AccountInstance</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 249</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_fetch'>fetch</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='ivar'>@version</span><span class='period'>.</span><span class='id identifier rubyid_fetch'>fetch</span><span class='lparen'>(</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>GET</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+      <span class='ivar'>@uri</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+  
+  <span class='kw'>return</span> <span class='const'>AccountInstance</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+      <span class='ivar'>@version</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_payload'>payload</span><span class='comma'>,</span>
+      <span class='label'>sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sid</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="incoming_phone_numbers-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/IncomingPhoneNumberList.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberList (class)">IncomingPhoneNumberList</a></span></tt>) <strong>incoming_phone_numbers</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the incoming_phone_numbers
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/IncomingPhoneNumberList.html" title="Twilio::REST::Api::V2010::AccountContext::IncomingPhoneNumberList (class)">IncomingPhoneNumberList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>IncomingPhoneNumberList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 449</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_incoming_phone_numbers'>incoming_phone_numbers</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>IncomingPhoneNumberContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@incoming_phone_numbers</span>
+    <span class='ivar'>@incoming_phone_numbers</span> <span class='op'>=</span> <span class='const'>IncomingPhoneNumberList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>owner_account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@incoming_phone_numbers</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="messages-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/MessageList.html" title="Twilio::REST::Api::V2010::AccountContext::MessageList (class)">MessageList</a></span></tt>) <strong>messages</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the messages
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/MessageList.html" title="Twilio::REST::Api::V2010::AccountContext::MessageList (class)">MessageList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>MessageList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 471</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_messages'>messages</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>MessageContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@messages</span>
+    <span class='ivar'>@messages</span> <span class='op'>=</span> <span class='const'>MessageList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@messages</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="notifications-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/NotificationList.html" title="Twilio::REST::Api::V2010::AccountContext::NotificationList (class)">NotificationList</a></span></tt>) <strong>notifications</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the notifications
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/NotificationList.html" title="Twilio::REST::Api::V2010::AccountContext::NotificationList (class)">NotificationList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>NotificationList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 493</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_notifications'>notifications</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>NotificationContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@notifications</span>
+    <span class='ivar'>@notifications</span> <span class='op'>=</span> <span class='const'>NotificationList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@notifications</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="outgoing_caller_ids-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/OutgoingCallerIdList.html" title="Twilio::REST::Api::V2010::AccountContext::OutgoingCallerIdList (class)">OutgoingCallerIdList</a></span></tt>) <strong>outgoing_caller_ids</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the outgoing_caller_ids
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/OutgoingCallerIdList.html" title="Twilio::REST::Api::V2010::AccountContext::OutgoingCallerIdList (class)">OutgoingCallerIdList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>OutgoingCallerIdList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 515</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_outgoing_caller_ids'>outgoing_caller_ids</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>OutgoingCallerIdContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@outgoing_caller_ids</span>
+    <span class='ivar'>@outgoing_caller_ids</span> <span class='op'>=</span> <span class='const'>OutgoingCallerIdList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@outgoing_caller_ids</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="queues-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/QueueList.html" title="Twilio::REST::Api::V2010::AccountContext::QueueList (class)">QueueList</a></span></tt>) <strong>queues</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the queues
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/QueueList.html" title="Twilio::REST::Api::V2010::AccountContext::QueueList (class)">QueueList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>QueueList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 537</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_queues'>queues</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>QueueContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@queues</span>
+    <span class='ivar'>@queues</span> <span class='op'>=</span> <span class='const'>QueueList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@queues</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="recordings-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/RecordingList.html" title="Twilio::REST::Api::V2010::AccountContext::RecordingList (class)">RecordingList</a></span></tt>) <strong>recordings</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the recordings
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/RecordingList.html" title="Twilio::REST::Api::V2010::AccountContext::RecordingList (class)">RecordingList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>RecordingList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572
+573
+574
+575
+576</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 559</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_recordings'>recordings</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>RecordingContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@recordings</span>
+    <span class='ivar'>@recordings</span> <span class='op'>=</span> <span class='const'>RecordingList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@recordings</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sandbox-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/SandboxList.html" title="Twilio::REST::Api::V2010::AccountContext::SandboxList (class)">SandboxList</a></span></tt>) <strong>sandbox</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the sandbox
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/SandboxList.html" title="Twilio::REST::Api::V2010::AccountContext::SandboxList (class)">SandboxList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>SandboxList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+581
+582
+583
+584
+585
+586</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 581</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sandbox'>sandbox</span>
+  <span class='kw'>return</span> <span class='const'>SandboxContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+      <span class='ivar'>@version</span><span class='comma'>,</span>
+      <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sip-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/SipList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList (class)">SipList</a></span></tt>) <strong>sip</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the sip
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/SipList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList (class)">SipList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>SipList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+591
+592
+593
+594
+595
+596
+597
+598
+599
+600</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 591</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sip'>sip</span>
+  <span class='kw'>unless</span> <span class='ivar'>@sip</span>
+    <span class='ivar'>@sip</span> <span class='op'>=</span> <span class='const'>SipList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@sip</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sms-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/SmsList.html" title="Twilio::REST::Api::V2010::AccountContext::SmsList (class)">SmsList</a></span></tt>) <strong>sms</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the sms
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/SmsList.html" title="Twilio::REST::Api::V2010::AccountContext::SmsList (class)">SmsList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>SmsList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+605
+606
+607
+608
+609
+610
+611
+612
+613
+614</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 605</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sms'>sms</span>
+  <span class='kw'>unless</span> <span class='ivar'>@sms</span>
+    <span class='ivar'>@sms</span> <span class='op'>=</span> <span class='const'>SmsList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@sms</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_s-instance_method">
+  
+    - (<tt>Object</tt>) <strong>to_s</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Provide a user friendly representation
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+682
+683
+684
+685</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 682</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='id identifier rubyid_context'>context</span> <span class='op'>=</span> <span class='ivar'>@solution</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_v'>v</span><span class='op'>|</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_k'>k</span><span class='embexpr_end'>}</span><span class='tstring_content'>: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_v'>v</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>,</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>#&lt;Twilio.Api.V2010.AccountContext </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_context'>context</span><span class='embexpr_end'>}</span><span class='tstring_content'>&gt;</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="tokens-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/TokenList.html" title="Twilio::REST::Api::V2010::AccountContext::TokenList (class)">TokenList</a></span></tt>) <strong>tokens</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the tokens
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/TokenList.html" title="Twilio::REST::Api::V2010::AccountContext::TokenList (class)">TokenList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>TokenList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+619
+620
+621
+622
+623
+624
+625
+626
+627
+628</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 619</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_tokens'>tokens</span>
+  <span class='kw'>unless</span> <span class='ivar'>@tokens</span>
+    <span class='ivar'>@tokens</span> <span class='op'>=</span> <span class='const'>TokenList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@tokens</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="transcriptions-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/TranscriptionList.html" title="Twilio::REST::Api::V2010::AccountContext::TranscriptionList (class)">TranscriptionList</a></span></tt>) <strong>transcriptions</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the transcriptions
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/TranscriptionList.html" title="Twilio::REST::Api::V2010::AccountContext::TranscriptionList (class)">TranscriptionList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>TranscriptionList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+633
+634
+635
+636
+637
+638
+639
+640
+641
+642
+643
+644
+645
+646
+647
+648
+649
+650</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 633</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_transcriptions'>transcriptions</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>TranscriptionContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@transcriptions</span>
+    <span class='ivar'>@transcriptions</span> <span class='op'>=</span> <span class='const'>TranscriptionList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@transcriptions</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountInstance.html" title="Twilio::REST::Api::V2010::AccountInstance (class)">AccountInstance</a></span></tt>) <strong>update</strong>(friendly_name: nil, status: nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns Updated AccountInstance
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountInstance.html" title="Twilio::REST::Api::V2010::AccountInstance (class)">AccountInstance</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>Updated AccountInstance</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 273</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='label'>friendly_name:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>status:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>FriendlyName</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_friendly_name'>friendly_name</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Status</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_status'>status</span><span class='comma'>,</span>
+  <span class='rbrace'>}</span>
+  
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='ivar'>@version</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>POST</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+      <span class='ivar'>@uri</span><span class='comma'>,</span>
+      <span class='label'>data:</span> <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+  
+  <span class='kw'>return</span> <span class='const'>AccountInstance</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+      <span class='ivar'>@version</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_payload'>payload</span><span class='comma'>,</span>
+      <span class='label'>sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sid</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="usage-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/UsageList.html" title="Twilio::REST::Api::V2010::AccountContext::UsageList (class)">UsageList</a></span></tt>) <strong>usage</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the usage
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/UsageList.html" title="Twilio::REST::Api::V2010::AccountContext::UsageList (class)">UsageList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>UsageList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+655
+656
+657
+658
+659
+660
+661
+662
+663
+664</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 655</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_usage'>usage</span>
+  <span class='kw'>unless</span> <span class='ivar'>@usage</span>
+    <span class='ivar'>@usage</span> <span class='op'>=</span> <span class='const'>UsageList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@usage</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="validation_requests-instance_method">
+  
+    - (<tt><span class='object_link'><a href="AccountContext/ValidationRequestList.html" title="Twilio::REST::Api::V2010::AccountContext::ValidationRequestList (class)">ValidationRequestList</a></span></tt>) <strong>validation_requests</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the validation_requests
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="AccountContext/ValidationRequestList.html" title="Twilio::REST::Api::V2010::AccountContext::ValidationRequestList (class)">ValidationRequestList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>ValidationRequestList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+669
+670
+671
+672
+673
+674
+675
+676
+677
+678</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account.rb', line 669</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_validation_requests'>validation_requests</span>
+  <span class='kw'>unless</span> <span class='ivar'>@validation_requests</span>
+    <span class='ivar'>@validation_requests</span> <span class='op'>=</span> <span class='const'>ValidationRequestList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@validation_requests</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Fri Jan 29 10:39:02 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

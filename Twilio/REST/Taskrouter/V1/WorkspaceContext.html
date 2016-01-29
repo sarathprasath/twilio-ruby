@@ -1,0 +1,1331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Twilio::REST::Taskrouter::V1::WorkspaceContext
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../../../';
+  framesUrl = "../../../../frames.html#!Twilio/REST/Taskrouter/V1/WorkspaceContext.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../../../_index.html">Index (W)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../../Twilio.html" title="Twilio (module)">Twilio</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../../REST.html" title="Twilio::REST (module)">REST</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../Taskrouter.html" title="Twilio::REST::Taskrouter (class)">Taskrouter</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../V1.html" title="Twilio::REST::Taskrouter::V1 (class)">V1</a></span></span>
+     &raquo; 
+    <span class="title">WorkspaceContext</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Twilio::REST::Taskrouter::V1::WorkspaceContext
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="../../InstanceContext.html" title="Twilio::REST::InstanceContext (class)">InstanceContext</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../../InstanceContext.html" title="Twilio::REST::InstanceContext (class)">InstanceContext</a></span></li>
+          
+            <li class="next">Twilio::REST::Taskrouter::V1::WorkspaceContext</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/twilio-ruby/rest/taskrouter/v1/workspace.rb<span class="defines">,<br />
+  lib/twilio-ruby/rest/taskrouter/v1/workspace/task.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/event.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/worker.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/workflow.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/activity.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/task_queue.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/task/reservation.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/workspace_statistics.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/worker/worker_statistics.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/worker/workers_statistics.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/workflow/workflow_statistics.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/task_queue/task_queue_statistics.rb,<br /> lib/twilio-ruby/rest/taskrouter/v1/workspace/task_queue/task_queues_statistics.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="WorkspaceContext/ActivityContext.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::ActivityContext (class)">ActivityContext</a></span>, <span class='object_link'><a href="WorkspaceContext/ActivityInstance.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::ActivityInstance (class)">ActivityInstance</a></span>, <span class='object_link'><a href="WorkspaceContext/ActivityList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::ActivityList (class)">ActivityList</a></span>, <span class='object_link'><a href="WorkspaceContext/ActivityPage.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::ActivityPage (class)">ActivityPage</a></span>, <span class='object_link'><a href="WorkspaceContext/EventContext.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::EventContext (class)">EventContext</a></span>, <span class='object_link'><a href="WorkspaceContext/EventInstance.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::EventInstance (class)">EventInstance</a></span>, <span class='object_link'><a href="WorkspaceContext/EventList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::EventList (class)">EventList</a></span>, <span class='object_link'><a href="WorkspaceContext/EventPage.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::EventPage (class)">EventPage</a></span>, <span class='object_link'><a href="WorkspaceContext/TaskContext.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskContext (class)">TaskContext</a></span>, <span class='object_link'><a href="WorkspaceContext/TaskInstance.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskInstance (class)">TaskInstance</a></span>, <span class='object_link'><a href="WorkspaceContext/TaskList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskList (class)">TaskList</a></span>, <span class='object_link'><a href="WorkspaceContext/TaskPage.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskPage (class)">TaskPage</a></span>, <span class='object_link'><a href="WorkspaceContext/TaskQueueContext.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskQueueContext (class)">TaskQueueContext</a></span>, <span class='object_link'><a href="WorkspaceContext/TaskQueueInstance.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskQueueInstance (class)">TaskQueueInstance</a></span>, <span class='object_link'><a href="WorkspaceContext/TaskQueueList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskQueueList (class)">TaskQueueList</a></span>, <span class='object_link'><a href="WorkspaceContext/TaskQueuePage.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskQueuePage (class)">TaskQueuePage</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkerContext.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkerContext (class)">WorkerContext</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkerInstance.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkerInstance (class)">WorkerInstance</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkerList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkerList (class)">WorkerList</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkerPage.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkerPage (class)">WorkerPage</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkflowContext.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkflowContext (class)">WorkflowContext</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkflowInstance.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkflowInstance (class)">WorkflowInstance</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkflowList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkflowList (class)">WorkflowList</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkflowPage.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkflowPage (class)">WorkflowPage</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkspaceStatisticsContext.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkspaceStatisticsContext (class)">WorkspaceStatisticsContext</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkspaceStatisticsInstance.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkspaceStatisticsInstance (class)">WorkspaceStatisticsInstance</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkspaceStatisticsList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkspaceStatisticsList (class)">WorkspaceStatisticsList</a></span>, <span class='object_link'><a href="WorkspaceContext/WorkspaceStatisticsPage.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkspaceStatisticsPage (class)">WorkspaceStatisticsPage</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#activities-instance_method" title="#activities (instance method)">- (ActivityList) <strong>activities</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the activities.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete-instance_method" title="#delete (instance method)">- (Boolean) <strong>delete</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Deletes the WorkspaceInstance.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#events-instance_method" title="#events (instance method)">- (EventList) <strong>events</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the events.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fetch-instance_method" title="#fetch (instance method)">- (WorkspaceInstance) <strong>fetch</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Fetch a WorkspaceInstance.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (WorkspaceContext) <strong>initialize</strong>(version, sid) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>WorkspaceContext.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#statistics-instance_method" title="#statistics (instance method)">- (WorkspaceStatisticsList) <strong>statistics</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the statistics.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#task_queues-instance_method" title="#task_queues (instance method)">- (TaskQueueList) <strong>task_queues</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the task_queues.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tasks-instance_method" title="#tasks (instance method)">- (TaskList) <strong>tasks</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the tasks.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_s-instance_method" title="#to_s (instance method)">- (Object) <strong>to_s</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Provide a user friendly representation.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update-instance_method" title="#update (instance method)">- (WorkspaceInstance) <strong>update</strong>(default_activity_sid: nil, event_callback_url: nil, friendly_name: nil, timeout_activity_sid: nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Updated WorkspaceInstance.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#workers-instance_method" title="#workers (instance method)">- (WorkerList) <strong>workers</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the workers.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#workflows-instance_method" title="#workflows (instance method)">- (WorkflowList) <strong>workflows</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Access the workflows.</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Twilio::REST::Taskrouter::V1::WorkspaceContext (class)">WorkspaceContext</a></span></tt>) <strong>initialize</strong>(version, sid) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns WorkspaceContext
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 204</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='comma'>,</span> <span class='id identifier rubyid_sid'>sid</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='rparen'>)</span>
+  
+  <span class='comment'># Path Solution
+</span>  <span class='ivar'>@solution</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+      <span class='label'>sid:</span> <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+  <span class='rbrace'>}</span>
+  <span class='ivar'>@uri</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/Workspaces/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  
+  <span class='comment'># Dependents
+</span>  <span class='ivar'>@activities</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@events</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@tasks</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@task_queues</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@workers</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@workflows</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@statistics</span> <span class='op'>=</span> <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="activities-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WorkspaceContext/ActivityList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::ActivityList (class)">ActivityList</a></span></tt>) <strong>activities</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the activities
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WorkspaceContext/ActivityList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::ActivityList (class)">ActivityList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>ActivityList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 281</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_activities'>activities</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>ActivityContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@activities</span>
+    <span class='ivar'>@activities</span> <span class='op'>=</span> <span class='const'>ActivityList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>workspace_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@activities</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>delete</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Deletes the WorkspaceInstance
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>true if delete succeeds, true otherwise</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+274
+275
+276</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 274</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete'>delete</span>
+  <span class='kw'>return</span> <span class='ivar'>@version</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>delete</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@uri</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="events-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WorkspaceContext/EventList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::EventList (class)">EventList</a></span></tt>) <strong>events</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the events
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WorkspaceContext/EventList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::EventList (class)">EventList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>EventList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 303</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_events'>events</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>EventContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@events</span>
+    <span class='ivar'>@events</span> <span class='op'>=</span> <span class='const'>EventList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>workspace_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@events</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="fetch-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WorkspaceInstance.html" title="Twilio::REST::Taskrouter::V1::WorkspaceInstance (class)">WorkspaceInstance</a></span></tt>) <strong>fetch</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Fetch a WorkspaceInstance
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WorkspaceInstance.html" title="Twilio::REST::Taskrouter::V1::WorkspaceInstance (class)">WorkspaceInstance</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>Fetched WorkspaceInstance</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 226</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_fetch'>fetch</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='ivar'>@version</span><span class='period'>.</span><span class='id identifier rubyid_fetch'>fetch</span><span class='lparen'>(</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>GET</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+      <span class='ivar'>@uri</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+  
+  <span class='kw'>return</span> <span class='const'>WorkspaceInstance</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+      <span class='ivar'>@version</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_payload'>payload</span><span class='comma'>,</span>
+      <span class='label'>sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sid</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="statistics-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WorkspaceContext/WorkspaceStatisticsList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkspaceStatisticsList (class)">WorkspaceStatisticsList</a></span></tt>) <strong>statistics</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the statistics
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WorkspaceContext/WorkspaceStatisticsList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkspaceStatisticsList (class)">WorkspaceStatisticsList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>WorkspaceStatisticsList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+413
+414
+415
+416
+417
+418</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 413</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_statistics'>statistics</span>
+  <span class='kw'>return</span> <span class='const'>WorkspaceStatisticsContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+      <span class='ivar'>@version</span><span class='comma'>,</span>
+      <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="task_queues-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WorkspaceContext/TaskQueueList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskQueueList (class)">TaskQueueList</a></span></tt>) <strong>task_queues</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the task_queues
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WorkspaceContext/TaskQueueList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskQueueList (class)">TaskQueueList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>TaskQueueList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 347</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_task_queues'>task_queues</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>TaskQueueContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@task_queues</span>
+    <span class='ivar'>@task_queues</span> <span class='op'>=</span> <span class='const'>TaskQueueList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>workspace_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@task_queues</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="tasks-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WorkspaceContext/TaskList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskList (class)">TaskList</a></span></tt>) <strong>tasks</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the tasks
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WorkspaceContext/TaskList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::TaskList (class)">TaskList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>TaskList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 325</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_tasks'>tasks</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>TaskContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@tasks</span>
+    <span class='ivar'>@tasks</span> <span class='op'>=</span> <span class='const'>TaskList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>workspace_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@tasks</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_s-instance_method">
+  
+    - (<tt>Object</tt>) <strong>to_s</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Provide a user friendly representation
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+422
+423
+424
+425</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 422</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='id identifier rubyid_context'>context</span> <span class='op'>=</span> <span class='ivar'>@solution</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_v'>v</span><span class='op'>|</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_k'>k</span><span class='embexpr_end'>}</span><span class='tstring_content'>: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_v'>v</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>,</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>#&lt;Twilio.Taskrouter.V1.WorkspaceContext </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_context'>context</span><span class='embexpr_end'>}</span><span class='tstring_content'>&gt;</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WorkspaceInstance.html" title="Twilio::REST::Taskrouter::V1::WorkspaceInstance (class)">WorkspaceInstance</a></span></tt>) <strong>update</strong>(default_activity_sid: nil, event_callback_url: nil, friendly_name: nil, timeout_activity_sid: nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns Updated WorkspaceInstance
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WorkspaceInstance.html" title="Twilio::REST::Taskrouter::V1::WorkspaceInstance (class)">WorkspaceInstance</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>Updated WorkspaceInstance</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 250</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='label'>default_activity_sid:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>event_callback_url:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>friendly_name:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>timeout_activity_sid:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>DefaultActivitySid</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_default_activity_sid'>default_activity_sid</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>EventCallbackUrl</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_event_callback_url'>event_callback_url</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>FriendlyName</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_friendly_name'>friendly_name</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>TimeoutActivitySid</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_timeout_activity_sid'>timeout_activity_sid</span><span class='comma'>,</span>
+  <span class='rbrace'>}</span>
+  
+  <span class='id identifier rubyid_payload'>payload</span> <span class='op'>=</span> <span class='ivar'>@version</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span>
+      <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>POST</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+      <span class='ivar'>@uri</span><span class='comma'>,</span>
+      <span class='label'>data:</span> <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+  
+  <span class='kw'>return</span> <span class='const'>WorkspaceInstance</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+      <span class='ivar'>@version</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_payload'>payload</span><span class='comma'>,</span>
+      <span class='label'>sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sid</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="workers-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WorkspaceContext/WorkerList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkerList (class)">WorkerList</a></span></tt>) <strong>workers</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the workers
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WorkspaceContext/WorkerList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkerList (class)">WorkerList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>WorkerList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 369</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_workers'>workers</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>WorkerContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@workers</span>
+    <span class='ivar'>@workers</span> <span class='op'>=</span> <span class='const'>WorkerList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>workspace_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@workers</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="workflows-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WorkspaceContext/WorkflowList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkflowList (class)">WorkflowList</a></span></tt>) <strong>workflows</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Access the workflows
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WorkspaceContext/WorkflowList.html" title="Twilio::REST::Taskrouter::V1::WorkspaceContext::WorkflowList (class)">WorkflowList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>WorkflowList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/taskrouter/v1/workspace.rb', line 391</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_workflows'>workflows</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>WorkflowContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>unless</span> <span class='ivar'>@workflows</span>
+    <span class='ivar'>@workflows</span> <span class='op'>=</span> <span class='const'>WorkflowList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>workspace_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+  <span class='ivar'>@workflows</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Fri Jan 29 10:39:04 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

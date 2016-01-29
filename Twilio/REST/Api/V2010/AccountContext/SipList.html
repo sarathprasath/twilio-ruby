@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Twilio::REST::Api::V2010::AccountContext::SipList
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../../../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../../../../';
+  framesUrl = "../../../../../frames.html#!Twilio/REST/Api/V2010/AccountContext/SipList.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../../../../_index.html">Index (S)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../../../Twilio.html" title="Twilio (module)">Twilio</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../../../REST.html" title="Twilio::REST (module)">REST</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../../Api.html" title="Twilio::REST::Api (class)">Api</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../V2010.html" title="Twilio::REST::Api::V2010 (class)">V2010</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../AccountContext.html" title="Twilio::REST::Api::V2010::AccountContext (class)">AccountContext</a></span></span>
+     &raquo; 
+    <span class="title">SipList</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../../../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../../../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Twilio::REST::Api::V2010::AccountContext::SipList
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="../../../ListResource.html" title="Twilio::REST::ListResource (class)">ListResource</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../../../ListResource.html" title="Twilio::REST::ListResource (class)">ListResource</a></span></li>
+          
+            <li class="next">Twilio::REST::Api::V2010::AccountContext::SipList</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/twilio-ruby/rest/api/v2010/account/sip.rb<span class="defines">,<br />
+  lib/twilio-ruby/rest/api/v2010/account/sip/domain.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/credential_list.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/ip_access_control_list.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/credential_list/credential.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/domain/credential_list_mapping.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/ip_access_control_list/ip_address.rb,<br /> lib/twilio-ruby/rest/api/v2010/account/sip/domain/ip_access_control_list_mapping.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="SipList/CredentialListContext.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::CredentialListContext (class)">CredentialListContext</a></span>, <span class='object_link'><a href="SipList/CredentialListInstance.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::CredentialListInstance (class)">CredentialListInstance</a></span>, <span class='object_link'><a href="SipList/CredentialListList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::CredentialListList (class)">CredentialListList</a></span>, <span class='object_link'><a href="SipList/CredentialListPage.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::CredentialListPage (class)">CredentialListPage</a></span>, <span class='object_link'><a href="SipList/DomainContext.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::DomainContext (class)">DomainContext</a></span>, <span class='object_link'><a href="SipList/DomainInstance.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::DomainInstance (class)">DomainInstance</a></span>, <span class='object_link'><a href="SipList/DomainList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::DomainList (class)">DomainList</a></span>, <span class='object_link'><a href="SipList/DomainPage.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::DomainPage (class)">DomainPage</a></span>, <span class='object_link'><a href="SipList/IpAccessControlListContext.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::IpAccessControlListContext (class)">IpAccessControlListContext</a></span>, <span class='object_link'><a href="SipList/IpAccessControlListInstance.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::IpAccessControlListInstance (class)">IpAccessControlListInstance</a></span>, <span class='object_link'><a href="SipList/IpAccessControlListList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::IpAccessControlListList (class)">IpAccessControlListList</a></span>, <span class='object_link'><a href="SipList/IpAccessControlListPage.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::IpAccessControlListPage (class)">IpAccessControlListPage</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#credential_lists-instance_method" title="#credential_lists (instance method)">- (CredentialListList) <strong>credential_lists</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>CredentialListList.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#domains-instance_method" title="#domains (instance method)">- (DomainList) <strong>domains</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>DomainList.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (SipList) <strong>initialize</strong>(version, account_sid: nil) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>SipList.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ip_access_control_lists-instance_method" title="#ip_access_control_lists (instance method)">- (IpAccessControlListList) <strong>ip_access_control_lists</strong>(sid = :unset) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>IpAccessControlListList.</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_s-instance_method" title="#to_s (instance method)">- (Object) <strong>to_s</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>Provide a user friendly representation.</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Twilio::REST::Api::V2010::AccountContext::SipList (class)">SipList</a></span></tt>) <strong>initialize</strong>(version, account_sid: nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns SipList
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/sip.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='comma'>,</span> <span class='label'>account_sid:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='rparen'>)</span>
+  
+  <span class='comment'># Path Solution
+</span>  <span class='ivar'>@solution</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+      <span class='label'>account_sid:</span> <span class='id identifier rubyid_account_sid'>account_sid</span>
+  <span class='rbrace'>}</span>
+  
+  <span class='comment'># Components
+</span>  <span class='ivar'>@domains</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@ip_access_control_lists</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@credential_lists</span> <span class='op'>=</span> <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="credential_lists-instance_method">
+  
+    - (<tt><span class='object_link'><a href="SipList/CredentialListList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::CredentialListList (class)">CredentialListList</a></span></tt>) <strong>credential_lists</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns CredentialListList
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="SipList/CredentialListList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::CredentialListList (class)">CredentialListList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>CredentialListList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/sip.rb', line 80</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_credential_lists'>credential_lists</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>CredentialListContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:account_sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+    <span class='ivar'>@credential_lists</span> <span class='op'>||=</span> <span class='const'>CredentialListList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:account_sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="domains-instance_method">
+  
+    - (<tt><span class='object_link'><a href="SipList/DomainList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::DomainList (class)">DomainList</a></span></tt>) <strong>domains</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns DomainList
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="SipList/DomainList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::DomainList (class)">DomainList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>DomainList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/sip.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_domains'>domains</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>DomainContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:account_sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+    <span class='ivar'>@domains</span> <span class='op'>||=</span> <span class='const'>DomainList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:account_sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ip_access_control_lists-instance_method">
+  
+    - (<tt><span class='object_link'><a href="SipList/IpAccessControlListList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::IpAccessControlListList (class)">IpAccessControlListList</a></span></tt>) <strong>ip_access_control_lists</strong>(sid = :unset) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Returns IpAccessControlListList
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="SipList/IpAccessControlListList.html" title="Twilio::REST::Api::V2010::AccountContext::SipList::IpAccessControlListList (class)">IpAccessControlListList</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>IpAccessControlListList</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/sip.rb', line 60</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ip_access_control_lists'>ip_access_control_lists</span><span class='lparen'>(</span><span class='id identifier rubyid_sid'>sid</span><span class='op'>=</span><span class='symbol'>:unset</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_sid'>sid</span> <span class='op'>!=</span> <span class='symbol'>:unset</span>
+    <span class='kw'>return</span> <span class='const'>IpAccessControlListContext</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:account_sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_sid'>sid</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  
+    <span class='ivar'>@ip_access_control_lists</span> <span class='op'>||=</span> <span class='const'>IpAccessControlListList</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+        <span class='ivar'>@version</span><span class='comma'>,</span>
+        <span class='label'>account_sid:</span> <span class='ivar'>@solution</span><span class='lbracket'>[</span><span class='symbol'>:account_sid</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_s-instance_method">
+  
+    - (<tt>Object</tt>) <strong>to_s</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    Provide a user friendly representation
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+97
+98
+99</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/twilio-ruby/rest/api/v2010/account/sip.rb', line 97</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>#&lt;Twilio.Api.V2010.SipList&gt;</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Fri Jan 29 10:39:03 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>
