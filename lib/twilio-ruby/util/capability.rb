@@ -27,6 +27,10 @@ module Twilio
         end
       end
 
+      def set_client_name(client_name)
+        @client_name = client_name
+      end
+
       def allow_event_stream(filters = {})
         scope_params = { 'path' => '/2010-04-01/Events' }
         scope_params['params'] = filters unless filters.empty?
